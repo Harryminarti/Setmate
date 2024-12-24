@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+
+    android:background="#C0C0C0"
+    android:layout_height="match_parent"
+    tools:context="com.setmate.setmate.chat_data">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_5sdp"
+        android:id="@+id/layout_chat"
+        android:gravity="center_vertical"
+        android:background="#010101"
+        android:orientation="horizontal">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+
+            android:id="@+id/receiver_icon"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/baseline_person_24"
+            android:layout_marginStart="@dimen/_17sdp"
+
+
+            />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_25sdp"
+            android:text="Message"
+
+
+            android:id="@+id/receiver_name"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+
+            android:layout_marginLeft="@dimen/_10sdp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2sp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:layout_below="@+id/layout_chat"
+        android:id="@+id/upper_line"
+        android:background="@android:color/black" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/upper_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_background"
+
+
+        android:paddingBottom="@dimen/_51sdp"
+        android:id="@+id/chat_recycler_view"
+        android:layout_above="@id/bottom_line"
+
+
+
+
+
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:id="@+id/bottom_line"
+        android:backgroundTint="@android:color/darker_gray"
+android:layout_above="@id/massage_chat_data"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/massage_chat_data"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:background="#A9A9A9"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_9sdp"
+        android:layout_alignParentBottom="true">
+
+
+
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/massage_text"
+            android:hint="Type your massage..."
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:textSize="@dimen/_20sdp"/>
+        <ImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:id="@+id/send_massage_btn"
+            android:layout_gravity="right"
+            android:layout_marginEnd="@dimen/_3sdp"
+
+
+            android:src="@drawable/sne"
+
+
+            />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

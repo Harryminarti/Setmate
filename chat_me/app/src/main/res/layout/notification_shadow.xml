@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/black"
+    android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+
+        android:id="@+id/name_chat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:backgroundTint="@color/white"
+        android:layout_margin="@dimen/_3sdp"
+
+
+android:background="@drawable/notification_text_border"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+
+
+
+
+
+            android:orientation="vertical">
+
+            <TextView
+
+                android:background="@color/white"
+                android:layout_margin="@dimen/_3sdp"
+
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:text="Name of student"
+
+                android:visibility="gone"
+
+                android:textColor="@android:color/black"
+
+                android:id="@+id/user_chat_name"
+                android:textStyle="bold|italic"
+
+                android:textSize="@dimen/_15sdp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="@dimen/_5sdp"
+
+            android:background="@drawable/notification_images_border"
+
+            android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/user_chat_profile_images"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+
+            android:layout_height="@dimen/_200sdp"
+
+            android:visibility="gone"
+
+            android:src="@android:color/holo_blue_light" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

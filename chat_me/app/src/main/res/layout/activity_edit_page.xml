@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.setmate.setmate.Edit_page">
+
+    <ProgressBar
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_centerInParent="true"
+
+        android:visibility="gone"
+        android:id="@+id/progress_bar"
+        />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+
+        android:padding="@dimen/_15sdp"
+
+
+        android:background="@drawable/background_edit"
+
+
+
+        android:layout_centerInParent="true"
+
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/profile_edit_images"
+            android:src="@color/black" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17sdp"
+            android:textColor="@color/black"
+            android:id="@+id/edit_page_name"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:hint="Enter Your name..."/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17sdp"
+            android:id="@+id/edit_page_age"
+
+            android:textColor="@color/black"
+
+
+            android:layout_marginTop="@dimen/_15sdp"
+            android:inputType="number"
+            android:hint="Enter Your age.."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="sure,Your age is above 18"
+/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_17sdp"
+            android:id="@+id/edit_page_interest"
+
+            android:textColor="@color/black"
+
+
+            android:layout_marginTop="@dimen/_15sdp"
+
+            android:hint="Enter Your Course..."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Gender"
+            android:textSize="@dimen/_18sdp"
+            android:textColor="@color/black"
+            android:id="@+id/gender_text"
+            android:layout_marginTop="@dimen/_15sdp"
+/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/gender_radio_btn"
+            android:paddingStart="@dimen/_7sdp"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:id="@+id/male_radio_btn"
+                android:textSize="@dimen/_17sdp"
+                android:paddingEnd="@dimen/_3sdp"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:id="@+id/female_radio_btn"
+                android:textSize="@dimen/_17sdp"
+                android:paddingEnd="@dimen/_3sdp"
+                />
+
+
+        </RadioGroup>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:textColor="@color/black"
+
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginBottom="65dp"
+            android:layout_gravity="center"
+            android:background="@drawable/get_otp_background"
+            android:paddingStart="@dimen/_8sdp"
+            android:id="@+id/edit_page_save_btn"
+
+            android:paddingEnd="@dimen/_8sdp"
+            android:textSize="@dimen/_25sdp"
+            />
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+
+
+        //double click listener dependency added here....................
+
+
+        maven { url 'https://jitpack.io' } // add this line
+
+
+//        .................................................................
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "setmate"
+include ':app'

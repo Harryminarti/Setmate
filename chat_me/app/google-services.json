@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "550949727849",
+    "firebase_url": "https://newchatapplication-11cc9-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "newchatapplication-11cc9",
+    "storage_bucket": "newchatapplication-11cc9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550949727849:android:afa5a637d947b5cf8b3cf8",
+        "android_client_info": {
+          "package_name": "com.setmate.setmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "550949727849-mtn7p5admpab9eg035vml8vag8s15rou.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUPJEhxC22QMQU02kKrjlF1SjcV0-gnNc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "550949727849-mtn7p5admpab9eg035vml8vag8s15rou.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
